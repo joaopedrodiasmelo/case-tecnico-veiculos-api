@@ -4,6 +4,18 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Ignorar arquivos do Maven Wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Ignorar configurações do Git
+.gitattributes
+.gitignore
+
+# Ignorar diretórios de compilação
+target/
+
 ### STS ###
 .apt_generated
 .classpath
