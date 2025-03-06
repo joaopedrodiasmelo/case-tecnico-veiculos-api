@@ -19,6 +19,11 @@ public class VeiculoController {
     private final VeiculoMapper mapper;
     private static final String API_KEY = "chave-api";
 
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("Application is healthy");
+    }
+
     @GetMapping(headers = "api-veiculo-mock")
     public ResponseEntity<List<VeiculoGetResponse>> findAll(
             @RequestHeader("api-veiculo-mock") String apiKey) {
